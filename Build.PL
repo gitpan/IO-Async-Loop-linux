@@ -9,6 +9,9 @@ my $build = Module::Build->new
    requires => {
                  'IO::Async' => 0,
                },
+   recommends => {
+                 'IO::Async::Loop::Epoll' => 0,
+               },
    license => 'perl',
    create_makefile_pl => 'traditional',
   );

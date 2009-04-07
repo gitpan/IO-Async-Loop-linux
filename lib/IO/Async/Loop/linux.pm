@@ -7,7 +7,7 @@ package IO::Async::Loop::linux;
 
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -35,6 +35,9 @@ L<IO::Async::Loop::IO_Ppoll>
 The end application using L<IO::Async> does not need to make any special
 effort to use these; the magic constructor in L<IO::Async::Loop> will
 automatically find and use it if it is installed.
+
+ $ perl -MIO::Async::Loop -E 'say ref IO::Async::Loop->new'
+ IO::Async::Loop::Epoll
 
 =cut
 
