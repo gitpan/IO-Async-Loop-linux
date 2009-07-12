@@ -1,8 +1,8 @@
 ---
 name: IO-Async-Loop-linux
-version: 0.02
+version: 0.03
 author:
-  - 'Paul Evans E<lt>leonerd@leonerd.org.ukE<gt>'
+  - 'Paul Evans <leonerd@leonerd.org.uk>'
 abstract: pick the best Loop implementation on Linux
 license: perl
 resources:
@@ -14,8 +14,8 @@ recommends:
 provides:
   IO::Async::Loop::linux:
     file: lib/IO/Async/Loop/linux.pm
-    version: 0.02
-generated_by: Module::Build version 0.3
+    version: 0.03
+generated_by: Module::Build version 0.33
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4

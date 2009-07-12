@@ -6,8 +6,9 @@
 package IO::Async::Loop::linux;
 
 use strict;
+use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -56,4 +57,4 @@ __END__
 
 =head1 AUTHOR
 
-Paul Evans E<lt>leonerd@leonerd.org.ukE<gt>
+Paul Evans <leonerd@leonerd.org.uk>
