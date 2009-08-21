@@ -8,7 +8,7 @@ package IO::Async::Loop::linux;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
@@ -29,7 +29,7 @@ L<IO::Async::Loop::Epoll>
 
 =item *
 
-L<IO::Async::Loop::IO_Ppoll>
+L<IO::Async::Loop::Ppoll>
 
 =back
 
@@ -45,8 +45,8 @@ automatically find and use it if it is installed.
 sub new
 {
    shift;
-   eval { require IO::Async::Loop::Epoll    } and return IO::Async::Loop::Epoll->new;
-   eval { require IO::Async::Loop::IO_Ppoll } and return IO::Async::Loop::IO_Ppoll->new;
+   eval { require IO::Async::Loop::Epoll } and return IO::Async::Loop::Epoll->new;
+   eval { require IO::Async::Loop::Ppoll } and return IO::Async::Loop::Ppoll->new;
    die;
 }
 

@@ -9,7 +9,7 @@ DESCRIPTION
 
     *   IO::Async::Loop::Epoll
 
-    *   IO::Async::Loop::IO_Ppoll
+    *   IO::Async::Loop::Ppoll
 
     The end application using IO::Async does not need to make any special
     effort to use these; the magic constructor in IO::Async::Loop will
